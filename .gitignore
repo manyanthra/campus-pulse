@@ -1,0 +1,4 @@
+.env
+node_modules
+uploads/*
+outlook-token.json
