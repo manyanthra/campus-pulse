@@ -11,4 +11,4 @@ const { User, Ticket } = require('./models');
     console.log(' ', e, '->', !u ? 'NOT FOUND (run: npm run seed)' : (await bcrypt.compare(p, u.password)) ? 'OK, password works' : 'exists but password differs (run: npm run seed)');
   }
   process.exit(0);
-})().catch(e => { console.log('Cannot connect:', e.message); process.exit(1); });
+
